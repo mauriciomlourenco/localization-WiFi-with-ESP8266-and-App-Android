@@ -1,0 +1,18 @@
+C:\Program Files\Java\jdk1.8.0_25\bin>keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+Nome do alias: androiddebugkey
+Data de criação: 23/08/2016
+Tipo de entrada: PrivateKeyEntry
+Comprimento da cadeia de certificados: 1
+Certificado[1]:
+Proprietário: C=US, O=Android, CN=Android Debug
+Emissor: C=US, O=Android, CN=Android Debug
+Número de série: 1
+Válido de: Tue Aug 23 23:06:19 BRT 2016 a: Thu Aug 16 23:06:19 BRT 2046
+Fingerprints do certificado:
+         MD5:  A1:94:F0:25:4E:1B:FE:76:82:F6:40:6C:5F:9E:0A:4C
+         SHA1: 45:47:1B:2D:47:A5:AD:AF:3A:75:A3:FE:B0:08:0E:B3:43:69:E2:D5
+         SHA256: 52:20:D2:C1:7B:13:44:5B:17:1B:22:3D:7D:6A:92:7F:27:CB:C4:DB:3E:0C:ED:A1:1C:9F:DC:84:D1:87:AF:0A
+         Nome do algoritmo de assinatura: SHA1withRSA
+         Versão: 1
+
+chave API Google Maps: AIzaSyCaNZRHk2Gc5P9fKGht7jEZS-RgR9cnBAE
