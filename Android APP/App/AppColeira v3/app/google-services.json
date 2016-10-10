@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1091727843306",
+    "firebase_url": "https://poetic-bongo-142906.firebaseio.com",
+    "project_id": "poetic-bongo-142906",
+    "storage_bucket": "poetic-bongo-142906.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091727843306:android:ae15556078fc91b2",
+        "android_client_info": {
+          "package_name": "com.example.mauri.appcoleira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091727843306-287okpqrd7h52iuki9o9u0nltic6pbtp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mauri.appcoleira",
+            "certificate_hash": "45471B2D47A5ADAF3A75A3FEB0080EB34369E2D5"
+          }
+        },
+        {
+          "client_id": "1091727843306-b4ve31jjtlfn639n79jsgjvdi8gfudoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC95KUDr9V0BAA7mlrohkPIzdnexJbDMvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091727843306-b4ve31jjtlfn639n79jsgjvdi8gfudoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">App Coleira</string>
+    <!-- inicial -->
+    <string name="botaobusca">Procurar Animais Por Perto</string>
+    <string name="botaocoleira">Interface Coleira</string>
+
+    <!-- Coleira -->
+    <string name="botaocadastro">Meu Cadastro</string>
+    <string name="botaostatus">STATUS MEU PET</string>
+    <string name="botaovoltar_tcol">Voltar</string>
+
+    <!-- Tela Cadastro -->
+    <string name="botaonovocad">Novo Cadastro</string>
+    <string name="botaoeditcad">Editar Cadastro</string>
+    <string name="botaovoltar_tcad">Voltar</string>
+
+    <!-- Tela Mapa Info -->
+    <string name="title_activity_tela_info_coleira">Map</string>
+
+    <!-- Tela Mapa Busca -->
+    <string name="title_activity_telabusca">Map</string>
+
+    <!-- Tela Novo Cadastro -->
+    <string name="tvinfouser_tnc">Sobre Você</string>
+    <string name="etNome_tnc">Nome:</string>
+    <string name="etaddress_tnc">Endereço:</string>
+    <string name="ettel_tnc">Telefone:</string>
+    <string name="tvinfopet_tnc">Sobre seu Pet</string>
+    <string name="etNomePet_tnc">Nome:</string>
+    <string name="etcod_tnc">Código Coleira:</string>
+    <string name="botaosalvar_tnc">Salvar</string>
+    <string name="botaovoltar_tnc">Voltar</string>
+
+    <!-- Tela Editar Cadastro -->
+    <string name="tvinfouser_tec">Sobre Você</string>
+    <string name="etNome_tec">Nome:</string>
+    <string name="etaddress_tec">Endereço:</string>
+    <string name="ettel_tec">Telefone:</string>
+    <string name="tvinfopet_tec">Sobre seu Pet</string>
+    <string name="etNomePet_tec">Nome:</string>
+    <string name="etcod_tec">Código Coleira:</string>
+    <string name="botaosalvar_tec">Salvar</string>
+    <string name="botaovoltar_tec">Voltar</string>
+
+    <string name="botaovoltar_telabusca">Voltar</string>
+    <string name="tv_telabusca">Procurando...</string>
+
+</resources>

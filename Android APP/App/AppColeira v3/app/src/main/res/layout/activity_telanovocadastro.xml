@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mauri.appcoleira.telanovocadastro">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvinfouser_tnc"
+        android:id="@+id/tvinfouser_tnc"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/etNome_tnc"
+        android:layout_alignEnd="@+id/etNome_tnc" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/etNome_tnc"
+        android:ems="10"
+        android:id="@+id/etNome_tnc"
+        android:layout_below="@+id/tvinfouser_tnc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etaddress_tnc"
+        android:layout_below="@+id/etNome_tnc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/etNome_tnc"
+        android:layout_alignEnd="@+id/etNome_tnc"
+        android:text="@string/etaddress_tnc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvinfopet_tnc"
+        android:id="@+id/tvinfopet_tnc"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/tvinfouser_tnc"
+        android:layout_alignEnd="@+id/tvinfouser_tnc" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/etNomePet_tnc"
+        android:ems="10"
+        android:id="@+id/etNomePet_tnc"
+        android:layout_below="@+id/tvinfopet_tnc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcod_tnc"
+        android:layout_below="@+id/etNomePet_tnc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/etcod_tnc"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botaovoltar_tnc"
+        android:id="@+id/botaovoltar_tnc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etcod_tnc"
+        android:layout_alignEnd="@+id/etcod_tnc"
+        android:onClick="back_tc"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botaosalvar_tnc"
+        android:id="@+id/botaosalvar_tnc"
+        android:layout_alignTop="@+id/botaovoltar_tnc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="salvar_tnc"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/ettel_tnc"
+        android:text="@string/ettel_tnc"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/etaddress_tnc"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
