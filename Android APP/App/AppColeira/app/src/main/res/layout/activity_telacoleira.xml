@@ -15,7 +15,8 @@
         android:text="@string/botaocadastro"
         android:id="@+id/botaocadastro"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startTelacadastro"/>
 
     <Button
         android:layout_width="315dp"
@@ -23,7 +24,8 @@
         android:text="@string/botaostatus"
         android:id="@+id/botaostatus"
         android:layout_below="@+id/botaocadastro"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startTelatestefirebase"/>
 
     <Button
         android:layout_width="315dp"
@@ -31,6 +33,7 @@
         android:text="@string/botaovoltar_tcol"
         android:id="@+id/botaovoltar_tcol"
         android:layout_below="@+id/botaostatus"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="back"/>
 
 </RelativeLayout>

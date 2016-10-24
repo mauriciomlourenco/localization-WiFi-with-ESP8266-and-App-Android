@@ -19,71 +19,6 @@
         android:layout_alignRight="@+id/etNome_tec"
         android:layout_alignEnd="@+id/etNome_tec" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="@string/etNome_tec"
-        android:ems="10"
-        android:id="@+id/etNome_tec"
-        android:layout_below="@+id/tvinfouser_tec"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/etaddress_tec"
-        android:text="@string/etaddress_tec"
-        android:layout_below="@+id/etNome_tec"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/ettel_tec"
-        android:text="@string/ettel_tec"
-        android:layout_below="@+id/etaddress_tec"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/tvinfopet_tec"
-        android:id="@+id/tvinfopet_tec"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/ettel_tec"
-        android:layout_toEndOf="@+id/ettel_tec" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="@string/etNomePet_tec"
-        android:ems="10"
-        android:id="@+id/etNomePet_tec"
-        android:layout_below="@+id/tvinfopet_tec"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etcod_tec"
-        android:text="@string/etcod_tec"
-        android:layout_below="@+id/etNomePet_tec"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:inputType="text" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -91,14 +26,124 @@
         android:id="@+id/botaosalvar_tec"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="salvar_tec"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNome_tec"
+        android:layout_below="@+id/tvinfouser_tec"
+        android:layout_alignEnd="@+id/etaddress_tec" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etaddress_tec"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvendereco_tec"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvendereco_tec"
+        android:layout_below="@+id/etNome_tec"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/tvendereco_tec" />
+
+    <TextView
+        android:text="@string/tvcodigocoleira_tec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvcodigocoleira_tec"
+        android:layout_below="@+id/etNomePet_tec"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="@string/tvtelefone_tec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtelefone_tec"
+        android:layout_below="@+id/etaddress_tec"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcod_tec"
+        android:inputType="text"
+        android:layout_below="@+id/tvcodigocoleira_tec"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNomePet_tec"
+        android:layout_below="@+id/tvnomepet_tec"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:text="@string/tvnome_tec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvnome_tec"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/tv_testeBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_testeBD"
+        android:layout_alignBaseline="@+id/botaovoltar_tec"
+        android:layout_alignBottom="@+id/botaovoltar_tec"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/botaovoltar_tec"
         android:id="@+id/botaovoltar_tec"
-        android:layout_alignTop="@+id/botaosalvar_tec"
-        android:layout_alignRight="@+id/etcod_tec"
-        android:layout_alignEnd="@+id/etcod_tec" />
+        android:onClick="back_tcad"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tvinfopet_tec"
+        android:id="@+id/tvinfopet_tec"
+        android:layout_marginTop="76dp"
+        android:layout_below="@+id/tvtelefone_tec"
+        android:layout_toEndOf="@+id/ettel_tec" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/ettel_tec"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/tvtelefone_tec"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/tvnomepet_tec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvnomepet_tec"
+        android:layout_alignBottom="@+id/tvinfopet_tec"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

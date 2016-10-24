@@ -22,24 +22,29 @@
 
     <!-- Tela Novo Cadastro -->
     <string name="tvinfouser_tnc">Sobre Você</string>
-    <string name="etNome_tnc">Nome:</string>
-    <string name="etaddress_tnc">Endereço:</string>
-    <string name="ettel_tnc">Telefone:</string>
+    <string name="tvnome_tnc">Nome:</string>
+    <string name="tvendereco_tnc">Endereço Completo:</string>
+    <string name="tvtelefone_tnc">Telefone:</string>
     <string name="tvinfopet_tnc">Sobre seu Pet</string>
-    <string name="etNomePet_tnc">Nome:</string>
-    <string name="etcod_tnc">Código Coleira:</string>
+    <string name="tvnomepet_tnc">Nome:</string>
+    <string name="tvcodigocol_tnc">Código Coleira:</string>
     <string name="botaosalvar_tnc">Salvar</string>
     <string name="botaovoltar_tnc">Voltar</string>
 
     <!-- Tela Editar Cadastro -->
     <string name="tvinfouser_tec">Sobre Você</string>
-    <string name="etNome_tec">Nome:</string>
-    <string name="etaddress_tec">Endereço:</string>
-    <string name="ettel_tec">Telefone:</string>
+    <string name="tvnome_tec">Nome:</string>
+    <string name="tvendereco_tec">Endereço Completo:</string>
+    <string name="tvtelefone_tec">Telefone:</string>
     <string name="tvinfopet_tec">Sobre seu Pet</string>
-    <string name="etNomePet_tec">Nome:</string>
-    <string name="etcod_tec">Código Coleira:</string>
+    <string name="tvnomepet_tec">Nome:</string>
+    <string name="tvcodigocoleira_tec">Código Coleira:</string>
     <string name="botaosalvar_tec">Salvar</string>
     <string name="botaovoltar_tec">Voltar</string>
+    <string name="tv_testeBD">VALOR ID COLEIRA</string>
+
+    <string name="botaovoltar_telabusca">Voltar</string>
+    <string name="tv_telabusca">Procurando...</string>
+    <string name="tvfirebase">Buscando informações servidor...</string>
 
 </resources>

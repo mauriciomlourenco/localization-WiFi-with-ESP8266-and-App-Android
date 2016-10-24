@@ -182,10 +182,10 @@ public class buscar_animais extends AppCompatActivity {
         DatabaseReference childref = rootRef.child(id);
 
         DatabaseReference Lat = childref.child("latitude");
-        Lat.setValue(latitude);
+        Lat.setValue(String.valueOf(latitude));
 
         DatabaseReference Long = childref.child("longitude");
-        Long.setValue(longitude);
+        Long.setValue(String.valueOf(longitude));
 
         DatabaseReference dist = childref.child("distancia");
         dist.setValue(String.valueOf(distancia));

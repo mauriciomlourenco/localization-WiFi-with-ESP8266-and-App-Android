@@ -14,7 +14,9 @@
         android:layout_height="90dp"
         android:text="@string/botaobusca"
         android:id="@+id/botaobusca"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startTelabusca" />
+
 
     <Button
         android:layout_width="315dp"
@@ -22,5 +24,6 @@
         android:text="@string/botaocoleira"
         android:id="@+id/botaocoleira"
         android:layout_below="@+id/botaobusca"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startInterfacecoleira"/>
 </RelativeLayout>

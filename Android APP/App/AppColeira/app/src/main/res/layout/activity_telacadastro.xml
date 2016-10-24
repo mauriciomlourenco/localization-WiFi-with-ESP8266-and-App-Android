@@ -15,7 +15,8 @@
         android:text="@string/botaonovocad"
         android:id="@+id/botaonovocad"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startTelanovocadastro"/>
 
     <Button
         android:layout_width="315dp"
@@ -23,7 +24,8 @@
         android:text="@string/botaoeditcad"
         android:id="@+id/botaoeditcad"
         android:layout_below="@+id/botaonovocad"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startTelaeditarcadastro"/>
 
     <Button
         android:layout_width="315dp"
@@ -31,6 +33,7 @@
         android:text="@string/botaovoltar_tcad"
         android:id="@+id/botaovoltar_tcad"
         android:layout_below="@+id/botaoeditcad"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="back_tc"/>
 
 </RelativeLayout>
