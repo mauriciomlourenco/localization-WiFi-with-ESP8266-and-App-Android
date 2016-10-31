@@ -1,6 +1,5 @@
 package com.example.mauri.appcoleira;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -17,9 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
-
-public class telaeditarcadastro extends AppCompatActivity {
+public class TelaEditarCadastro extends AppCompatActivity {
     EditText et_Nome;
     EditText et_endereco;
     EditText et_telefone;
@@ -43,11 +39,12 @@ public class telaeditarcadastro extends AppCompatActivity {
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference rootRef = database.getReference();
     private DatabaseReference enderecobd = database.getReference();
+    private ValueEventListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_telaeditarcadastro);
+        setContentView(R.layout.activity_tela_editar_cadastro);
 
         et_Nome = (EditText) findViewById(R.id.etNome_tec);
         et_endereco = (EditText) findViewById(R.id.etaddress_tec);
@@ -66,7 +63,7 @@ public class telaeditarcadastro extends AppCompatActivity {
         //enderecobd = database.getReference("/" + idcadastro.getIDColeira());
 
         enderecobd.child(idcadastro.getIDColeira()).addListenerForSingleValueEvent(
-                new ValueEventListener() {
+                listener = new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Log.i("Reading: ", "entrou child, lendo dados");
@@ -93,7 +90,7 @@ public class telaeditarcadastro extends AppCompatActivity {
 
 
     public void back_tcad(View view) {
-        Intent Telacoleira = new Intent(this, telacoleira.class);
+        Intent Telacoleira = new Intent(this, TelaColeira.class);
         startActivity(Telacoleira);
     }
 
@@ -123,5 +120,10 @@ public class telaeditarcadastro extends AppCompatActivity {
         DatabaseReference childref = rootRef.child(valores.getIdColeira());
         childref.setValue(valores);
 
+    }
+
+    protected void onDestroy(){
+        super.onDestroy();
+        enderecobd.removeEventListener(listener);
     }
 }

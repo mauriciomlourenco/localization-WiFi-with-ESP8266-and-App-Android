@@ -5,28 +5,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class telacoleira extends AppCompatActivity {
+public class TelaColeira extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_telacoleira);
+        setContentView(R.layout.activity_tela_coleira);
     }
 
     public void startTelacadastro (View view){
-        Intent Telacadastro = new Intent(this, telacadastro.class);
+        Intent Telacadastro = new Intent(this, TelaCadastro.class);
         startActivity(Telacadastro);
 
     }
 
     public void startTelainfocoleira (View view){
-        Intent Telainfo = new Intent(this, telaInfoColeira.class);
+        Intent Telainfo = new Intent(this, InfoFirebase.class);
         startActivity(Telainfo);
     }
 
     //teste, apagar depois
     public void startTelatestefirebase (View view) {
-        Intent Telainfo = new Intent(this, testeleiturafirebase.class);
+        Intent Telainfo = new Intent(this, InfoFirebase.class);
         startActivity(Telainfo);
     }
 

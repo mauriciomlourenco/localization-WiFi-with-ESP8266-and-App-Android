@@ -22,12 +22,12 @@ public class MainActivity extends Activity {
     }
 
     public void startTelabusca (View view){
-        Intent Telabusca = new Intent(this, buscar_animais.class);
+        Intent Telabusca = new Intent(this, BuscarAnimais.class);
         startActivity(Telabusca);
     }
 
     public void startInterfacecoleira (View view){
-        Intent Telacoleira = new Intent(this, telacoleira.class);
+        Intent Telacoleira = new Intent(this, TelaColeira.class);
         startActivity(Telacoleira);
     }
 }

@@ -43,8 +43,14 @@
     <string name="botaovoltar_tec">Voltar</string>
     <string name="tv_testeBD">VALOR ID COLEIRA</string>
 
+    <!-- Tela Busca -->
     <string name="botaovoltar_telabusca">Voltar</string>
     <string name="tv_telabusca">Procurando...</string>
+
+    <!-- Tela Info -->
     <string name="tvfirebase">Buscando informações servidor...</string>
+    <string name="botaoMapa">Visualizar Mapa</string>
+    <string name="botaoVoltarTelaInfo">Voltar</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

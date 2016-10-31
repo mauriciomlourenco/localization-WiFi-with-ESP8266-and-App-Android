@@ -10,7 +10,7 @@ import android.widget.EditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class telanovocadastro extends AppCompatActivity {
+public class TelaNovoCadastro extends AppCompatActivity {
     EditText et_NomeD;
     EditText et_endereco;
     EditText et_telefone;
@@ -35,7 +35,7 @@ public class telanovocadastro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_telanovocadastro);
+        setContentView(R.layout.activity_tela_novo_cadastro);
 
         et_NomeD = (EditText)findViewById(R.id.etNome_tnc);
         et_endereco = (EditText)findViewById(R.id.etaddress_tnc);
@@ -48,7 +48,7 @@ public class telanovocadastro extends AppCompatActivity {
     }
 
     public void back_telacadastro (View view){
-        Intent Telanovocadastro = new Intent(this, telacadastro.class);
+        Intent Telanovocadastro = new Intent(this, TelaCadastro.class);
         startActivity(Telanovocadastro);
     }
 
