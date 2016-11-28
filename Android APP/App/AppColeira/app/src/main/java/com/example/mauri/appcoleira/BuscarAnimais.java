@@ -35,7 +35,10 @@ public class BuscarAnimais extends AppCompatActivity {
     private final Handler handler = new Handler();
     //private ListView lv;
 
+    // SSID deve ser o mesmo da rede Wi-Fi criada pelo módulo
     public static final String NomeRede = "TESTE_WIFI";
+    //CALIBRAÇÃO CÁLCULO DISTÂNCIA
+    public static final double ajuste = 1/(31.626); // APÓS SOMAR 0.515
 
     private DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -131,14 +134,6 @@ public class BuscarAnimais extends AppCompatActivity {
         double pottW; //Potência transmitida em Wats
         double distancia; // variável que armazena a distância (raio em m) do celular em relação ao módulo transmissor
 
-        //buscar informações de data/hora
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
-        Date data = new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(data);
-        Date data_atual = cal.getTime();
-
-        String data_completa = dateFormat.format(data_atual);
 
         // instancia o service, GPSTracker gps
         GPSTracker gps = new GPSTracker(BuscarAnimais.this);
@@ -148,24 +143,33 @@ public class BuscarAnimais extends AppCompatActivity {
             longitude = gps.getLongitude();
         }
 
-        //Calculo da distancia utilizando a fórmula de Friiss
-        // (Pr/Pt) = Gt*Gr* [(lambda/4*PI*D)]
-        //lambda = C/F; C veloc. da luz, F frequência
-        //lambda = 0.12248 // comprimento de onda do sinal Wi-Fi (Frequência = 2.4 GHz)
 
         //Calculo da distancia utilizando a fórmula de Friiss
         // (Pr/Pt) = Gt*Gr* [(lambda/4*PI*D)]
         //lambda = C/F; C veloc. da luz, F frequência
         //lambda = 0.12248 // comprimento de onda do sinal Wi-Fi (Frequência = 2.4 GHz)
 
-        /* CONFIGURAR VALORES */
+
         int Gt = 1; //Ganho da antena de transmissão
         int Gr = 1; //Ganho da antena de recepção
 
-        pottW = 0.1;
-        potrW = (Math.pow(10, (potrdb/10))) * 0.001;
 
-        distancia = (0.12248/(4 * Math.PI)) * Math.sqrt((pottW * Gt * Gr)/ (potrW));
+        //Potência transmissão: 20 dBm = 100 mW = 0.1 W
+        pottW = 0.1;
+        // Cálculo da Potência recebida em W
+        potrW = (Math.pow(10, (potrdb/10))) * 0.001;
+        //Cálculo da distância
+        // distancia = (0.12248/(4 * Math.PI)) * Math.sqrt((pottW * Gt * Gr)/ (potrW)); // VALOR NÃO CALIBRADO
+        distancia = ((0.12248/(4 * Math.PI)) * Math.sqrt((pottW * Gt * Gr)/ (potrW))) * ajuste + 0.515; // VALOR CALIBRADO
+
+        //buscar informações de data/hora
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
+        Date data = new Date();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(data);
+        Date data_atual = cal.getTime();
+
+        String data_completa = dateFormat.format(data_atual);
 
         //Dados coletados: id, latitude, longitude, distância (Armazenar em uma classe?)
         texto ="Id:" + id.toString() + " Latitude:" + String.valueOf(latitude) + " Longitude:" + String.valueOf(longitude) + " Ditancia(m):" + String.valueOf(distancia)
